@@ -22,12 +22,12 @@ Our primary objectives are:
 
 | __Variable__   | __Description__ |
 |     :---       |       :---      |      
-| __InvoiceNo__  | Code representing each unique transaction. If this code starts with letter 'C', it indicates a cancellation. |
+| __InvoiceNo__  | Code representing each unique transaction. |
 | __StockCode__  | Code uniquely assigned to each distinct product. |
 | __Description__| Description of each product. |
 | __Quantity__   | The number of units of a product in a transaction. |
 | __InvoiceDate__| The date and time of the transaction. |
-| __UnitPrice__  | The unit price of the product in sterling. |
+| __UnitPrice__  | The unit price of the product. |
 | __CustomerID__ | Identifier uniquely assigned to each customer. |
 | __Country__    | The country of the customer. |
 
@@ -39,12 +39,12 @@ Our primary objectives are:
    - Handling missing values, cancellations, and duplicates  
    - Feature engineering to create customer-level metrics (Recency, Frequency, Monetary — *RFM*)  
 
-2. **Unsupervised Learning**
-   - Dimensionality reduction with **PCA**  
-   - **K-means clustering** to segment customers  
-
-3. **Anomaly Detection**
+2. **Anomaly Detection**
    - Using **Isolation Forest** to identify abnormal purchasing behavior  
+
+3. **Unsupervised Learning**
+   - Dimensionality reduction with **PCA**  
+   - **K-means clustering** to segment customers
 
 4. **Recommendation System**
    - Recommending top-selling products in each cluster to customers who haven’t purchased them  
@@ -59,9 +59,9 @@ Our primary objectives are:
 ---
 
 ## 🚀 Tech Stack
-- **Python** 🐍  
-- **Pandas / NumPy** for data preprocessing  
-- **Matplotlib / Seaborn** for visualization  
+- **Python**   
+- **Pandas & NumPy** for data preprocessing  
+- **Matplotlib**  for visualization  
 - **Scikit-learn** for clustering, PCA & anomaly detection  
 
 ---
